@@ -20,7 +20,6 @@
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
     "express-winston": "^4.1.0",
-    "hybrid-disk-cache": "^0.1.7",
     "jsonwebtoken": "^8.5.1",
     "lowdb": "^2.1.0",
     "mariadb": "^2.5.3",
