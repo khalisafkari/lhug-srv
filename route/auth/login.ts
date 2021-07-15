@@ -28,8 +28,9 @@ app.get('/', wrapper(async (req: request, res: Response) => {
         id: data[0].id,
         email: data[0].email,
         role: data[0].role
-      }, Buffer.from('khalisafkari', 'base64'), {
-        expiresIn: '365d'
+      }, Buffer.from(`${process.env.JWT_TOKEN}`, 'base64'), {
+        expiresIn: '365d',
+	algorithm: 'HS256'
       })
     }
     return res.status(200).send(results)

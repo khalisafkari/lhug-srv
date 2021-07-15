@@ -8,7 +8,7 @@ import Rotate from 'winston-daily-rotate-file'
 import winston from 'winston'
 dotnev.config()
 
-const PORT: number = 3000
+const PORT: number = 3002
 
 const app: Application = express()
 

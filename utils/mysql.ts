@@ -2,8 +2,9 @@ import { Request, Response } from 'express'
 import mariadb from 'mariadb'
 
 const sql = mariadb.createPool({
-  host: 'localhost',
-  user: 'root',
+  host: '127.0.0.1',
+  user: 'lovehug',
+  password: 'lovehugdotcom@@',
   connectionLimit: 10,
   database: 'lovehug'
 })
